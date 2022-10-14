@@ -1,0 +1,12 @@
+<h1>Basic Form Using Angualar</h1>
+<form #basicForm="ngForm" (ngSubmit)="getData(basicForm.value)">
+  <input type="text"ngModel name="user" placeholder="Enter User Name"/><br/><br/>
+  <input type="email" ngModel name="emailid" placeholder="Enter email"/><br/><br/>
+  <input type="text" ngModel name="address" placeholder="Enter User Address"/><br/><br/>
+  <button>Register</button>
+</form>
+<ul>
+  <li>{{userData.user}}</li>
+  <li>{{userData.emailid}}</li> 
+  <li>{{userData.address}}</li>
+</ul>
